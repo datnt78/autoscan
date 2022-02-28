@@ -1,0 +1,5 @@
+telegram:
+  - id: "tel"
+    telegram_api_key: "5208138532:AAF0hCBTrUTfseZ_cWxK0ieiGbhlD3RKsWM"
+    telegram_chat_id: "5287330790"
+    telegram_format: "{{data}}"
