@@ -24,7 +24,7 @@ echo test > /root/alltargets.txtls
 mv autoscan-main/config.xray.yaml /root/config.yaml
 mv autoscan-main/start.sh /root/
 mv autoscan-main/launcher.py crawlergo_x_XRAY/
-mv autoscan-main/notify-fs.py /root/
+mv autoscan-main/notify-fs.py /root/notify.py
 mv autoscan-main/ping.py /root/
 mv autoscan-main/domain.txt /root/
 subfinder
