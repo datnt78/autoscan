@@ -43,7 +43,7 @@ if [ -s domains.txtls ];then
 #使用nuclei，xray 扫描存活资产，并将漏洞结果发送到通知，并删除此次缓存文件，并结束
         echo "开始使用 nuclei 对新增资产进行漏洞扫描" > temp.txt
         python3 notify.py temp.txt
-        cat newurls.txtls | nuclei -rl 600 -bs 50 -c 30  -mhe 10 -ni -o res-all-vulnerability-results.txtls -stats -silent -severity critical,medium,high,low -es info
+        cat newurls.txtls | nuclei -rl 120 -bs 20 -mhe 10 -ni  -t ./cent-nuclei-templates -o res-all-vulnerability-results.txtls -stats -silent -es info
         python3 notify.py res-all-vulnerability-results.txtls
 
         sleep 5
