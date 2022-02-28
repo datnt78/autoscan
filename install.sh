@@ -22,7 +22,7 @@ rm -rf main.zip
 #移动文件至指定位置
 mv autoscan-main/xray /usr/bin/ && mv autoscan-main/httpx /usr/bin/ && mv autoscan-main/subfinder /usr/bin/ && mv autoscan-main/nuclei /usr/bin/ && mv autoscan-main/naabu /usr/bin/ && mv autoscan-main/anew /usr/bin/ && mv autoscan-main/notify /usr/bin/
 echo test > /root/alltargets.txtls
-mv autoscan-main/config.xray.yaml /root/config.yaml\
+mv autoscan-main/config.xray.yaml /root/config.yaml
 mv autoscan-main/launcher.py crawlergo_x_XRAY/
 mv autoscan-main/notify-fs.py /root/notify.py
 mv autoscan-main/ping.py /root/
