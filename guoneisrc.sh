@@ -55,7 +55,7 @@ if [ -s domains.txtls ];then
 
         python3 /root/crawlergo_x_XRAY/launcher.py
 
-        echo "crawlergo稍后查看xray报告"  > temp.txt
+        echo "crawlergo结束稍后查看xray报告"  > temp.txt
         python3 notify.py temp.txt
         rm -f open-domain.txtls
         rm -f newurls.txtls
