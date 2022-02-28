@@ -9,7 +9,7 @@ pip3 install simplejson
 cd /root
 #下载chrome
 wget https://storage.googleapis.com/chromium-browser-snapshots/Linux_x64/706915/chrome-linux.zip
-unzip chrome-linux.zip && sleep 5 && mv chrome-linux /root/chrome &&rm -f chrome-linux.zip
+unzip chrome-linux.zip && sleep 5 && mv chrome-linux /root/chrome &&rm -f chrome-linux.zip && chmod +x /root/chrome/chrome
 #下载cent
 wget https://github.com/xm1k3/cent/releases/download/v1.0/cent && chmod +x cent && move cent /usr/bin/
 #下载githua
