@@ -28,7 +28,9 @@ mv autoscan-main/notify.py /root/
 mv autoscan-main/ping.py /root/
 subfinder
 notify
+mv autoscan-main/guoneisrc.sh /root/start.sh
 mv autoscan-main/config.yaml /root/.config/subfinder/config.yaml -f
 mv autoscan-main/provider-config.yaml /root/.config/notify/provider-config.yaml -f
+chmod +x /root/start.sh
 #清理
 rm -rf main.zip && rm -rf __MACOSX && rm -rf autoscan-main
