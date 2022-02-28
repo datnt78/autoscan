@@ -3,7 +3,8 @@
 nuclei -silent -update
 sleep 5
 nuclei -silent -ut
-
+echo "运行xray监听9999端口"
+echo "xray webscan --listen 127.0.0.1:9999 --html-output proxy.html"
 echo "nuclei更新完毕开始资产收集" > temp.txt
 python3 notify.py temp.txt
 #资产倒入
@@ -11,12 +12,10 @@ subfinder -silent -dL domain.txt -o domains.txt
 echo "子域名收集完毕" > temp.txt
 python3 notify.py temp.txt
 cat domains.txt >> newdomains.md
-rm -f domain.txt
 rm -f domains.txt
 awk 'NR==FNR{lines[$0];next} !($0 in lines)' alltargets.txtls newdomains.md >> domains.txtls #资产对比
 rm -f newdomains.md
 ################################################################################## 发送新增资产手机通知
-sleep 10
 python3 ping.py #通过dns判断存活
 mv result.txt domains.txtls -f
 rm -f error.txt
