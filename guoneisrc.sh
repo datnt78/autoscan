@@ -1,8 +1,6 @@
 #!/bin/bash
 #资产更新
-nuclei -silent -update
-sleep 5
-nuclei -silent -ut
+cent -p cent-nuclei-templates -k
 echo "运行xray监听9999端口"
 echo "xray webscan --listen 127.0.0.1:9999 --html-output proxy.html"
 echo "nuclei更新完毕开始资产收集" > temp.txt
