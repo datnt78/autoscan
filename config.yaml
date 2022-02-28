@@ -1,0 +1,101 @@
+resolvers:
+    - 1.1.1.1:53
+    - 1.0.0.1:53
+    - 8.8.8.8:53
+    - 8.8.4.4:53
+    - 9.9.9.9:53
+    - 9.9.9.10:53
+    - 77.88.8.8:53
+    - 77.88.8.1:53
+    - 208.67.222.222:53
+    - 208.67.220.220:53
+sources:
+    - alienvault
+    - anubis
+    - bufferover
+    - certspotter
+    - censys
+    - chaos
+    - chinaz
+    - crtsh
+    - dnsdumpster
+    - hackertarget
+    - intelx
+    - passivetotal
+    - robtex
+    - riddler
+    - securitytrails
+    - shodan
+    - spyse
+    - sublist3r
+    - threatcrowd
+    - threatminer
+    - virustotal
+    - fofa
+all-sources:
+    - alienvault
+    - anubis
+    - archiveis
+    - binaryedge
+    - bufferover
+    - censys
+    - certspotter
+    - chaos
+    - commoncrawl
+    - crtsh
+    - dnsdumpster
+    - dnsdb
+    - github
+    - hackertarget
+    - intelx
+    - passivetotal
+    - rapiddns
+    - riddler
+    - recon
+    - robtex
+    - securitytrails
+    - shodan
+    - sitedossier
+    - sonarsearch
+    - spyse
+    - sublist3r
+    - threatbook
+    - threatcrowd
+    - threatminer
+    - virustotal
+    - waybackarchive
+    - zoomeye
+    - fofa
+recursive:
+    - alienvault
+    - binaryedge
+    - bufferover
+    - certspotter
+    - crtsh
+    - dnsdumpster
+    - hackertarget
+    - passivetotal
+    - securitytrails
+    - sonarsearch
+    - sublist3r
+    - virustotal
+binaryedge: [3b2164ec-e316-4c77-a097-034da1a7ae10]
+censys: [1b1a927b-7157-4a80-a365-6b77e64e384a:XLZTikjKuyq9yNZyoMnUwab2nYms83Ob]
+certspotter: [43615_QD1kqE1SvlXeqrRp6XwS]
+#chaos: []
+#chinaz: []
+#dnsdb: []
+github: [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]
+intelx: [d41fbb1d-718b-4d5d-9532-014c707cbaa1]
+passivetotal: [zjandzj11@163.com:58221aea19baa2a6c778d347530cf3061355766ed8f7bdc4014274d45812fdad]
+#recon: []
+#robtex: []
+securitytrails: [rxjAtBva09xX2fldLEyGioLstDwY5K0F]
+shodan: [eJsKrIW7ZfMTqnmKmxyRWfraWVXTRmnf]
+spyse: [21cc9885-58e9-4c9d-9346-166c297192f8]
+#threatbook: []
+urlscan: [1394aba1-6b75-4fc6-937d-6335601378b7]
+virustotal: [568d59267570123c8fa848a88d7286d5e55dea40459df7449c0be4ef88e235e1]
+zoomeye: [8E149064-1df8-89844-2775-ab26b640e0a]
+#fofa: []
+subfinder-version: 2.4.5
