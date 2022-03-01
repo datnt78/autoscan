@@ -11,7 +11,8 @@ cd /root
 wget https://storage.googleapis.com/chromium-browser-snapshots/Linux_x64/706915/chrome-linux.zip
 unzip chrome-linux.zip && sleep 5 && mv chrome-linux /root/chrome &&rm -f chrome-linux.zip && chmod +x /root/chrome/chrome
 #下载cent
-wget https://github.com/xm1k3/cent/releases/download/v1.0/cent && chmod +x cent && mv /root/cent /usr/bin/
+wget https://github.com/ping-0day/templates/archive/refs/heads/main.zip && unzip main.zip && rm -rf main.zip
+sleep 2
 #下载githua
 wget https://github.com/ping-0day/autoscan/archive/refs/heads/main.zip
 unzip main.zip
