@@ -10,7 +10,7 @@ cd /root
 #下载chrome
 wget https://storage.googleapis.com/chromium-browser-snapshots/Linux_x64/706915/chrome-linux.zip
 unzip chrome-linux.zip && sleep 5 && mv chrome-linux /root/chrome &&rm -f chrome-linux.zip && chmod +x /root/chrome/chrome
-#下载cent
+#下载nuclei模版
 wget https://github.com/ping-0day/templates/archive/refs/heads/main.zip && unzip main.zip && rm -rf main.zip
 sleep 2
 #下载githua
@@ -36,6 +36,5 @@ mv autoscan-main/guoneisrc.sh /root/start.sh
 mv autoscan-main/config.yaml /root/.config/subfinder/config.yaml -f
 mv autoscan-main/provider-config.yaml /root/.config/notify/provider-config.yaml -f
 chmod +x /root/start.sh
-cent -p cent-nuclei-templates -k
 #清理
 rm -rf main.zip && rm -rf __MACOSX && rm -rf autoscan-main
